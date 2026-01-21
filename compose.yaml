@@ -1,0 +1,10 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: mlops-py
+    working_dir: /app
+    volumes:
+      - ./:/app
+    command: ["python", "-V"]
