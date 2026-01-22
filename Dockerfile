@@ -9,5 +9,7 @@ RUN pip install -r requirements.txt
 # Copy the rest of the code
 COPY . .
 
+EXPOSE 5001
+
 # Command to run the model training script
-CMD ["python", "src/train.py"]
+CMD ["python", "src/app.py"]
